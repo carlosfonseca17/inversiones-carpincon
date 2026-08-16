@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Productos y Servicios | Carpincon — Bogotá</title>
+  <meta name="description" content="Comedores, salas, cocinas integrales, closets, escaleras en madera y tapicería a medida. Conoce todo lo que fabricamos en Carpincon, Bogotá.">
+  <link rel="icon" href="img/new_log.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─ HEADER ──────────────────────────────────────────────── -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="/" class="logo">
+      <img src="img/new_log.jpeg" alt="Logo Carpincon">
+      <div>
+        <div class="logo-name">Carpincon</div>
+        <div class="logo-tag">Carpintería &amp; Tapicería</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="quienessomos.html">Quiénes somos</a>
+      <a href="productos_y_servicios.html" class="activo">Productos</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="hdr-cta">
+      <div class="hdr-icons">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="hdr-icon" aria-label="Instagram">📸</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="hdr-icon" aria-label="TikTok">🎵</a>
+      </div>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-hdr">💬 WhatsApp</a>
+      <button class="hmb" aria-label="Abrir menú" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ─ PAGE HERO ───────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="hero-bg" style="background-image:url('img/productos.png')"></div>
+  <div class="hero-ov"></div>
+  <div class="page-hero-body">
+    <div class="hero-tag">✦ Todo a medida</div>
+    <h1>Productos y servicios</h1>
+    <p>Desde comedores hasta closets: cada pieza se diseña y fabrica exactamente para tu espacio, con materiales premium.</p>
+  </div>
+</section>
+
+<!-- ─ RESUMEN RÁPIDO ──────────────────────────────────────── -->
+<section class="prods" style="padding-bottom:20px">
+  <div class="prods-hdr">
+    <span class="label">Lo que fabricamos</span>
+    <h2 class="title">Seis líneas de trabajo, un mismo cuidado</h2>
+    <p class="sub" style="margin:0 auto">Explora cada categoría más abajo o escríbenos directamente por WhatsApp con tu idea.</p>
+  </div>
+  <div class="prods-grid">
+    <a href="#comedores" class="pcard"><div class="pcard-img"><img src="img/comedor.jpg" alt="Comedores a medida" loading="lazy"></div><div class="pcard-body"><h3>Comedores</h3><p>Elegancia, comodidad y durabilidad hechos exactamente para tu espacio.</p><span class="pcard-lnk">Ver más ↓</span></div></a>
+    <a href="#salas" class="pcard"><div class="pcard-img"><img src="img/sala.jpg" alt="Salas a medida" loading="lazy"></div><div class="pcard-body"><h3>Salas</h3><p>Diseños modernos y funcionales hechos a tu gusto.</p><span class="pcard-lnk">Ver más ↓</span></div></a>
+    <a href="#tapiceria" class="pcard"><div class="pcard-img"><img src="img/sofas.jpg" alt="Tapicería de sofás" loading="lazy"></div><div class="pcard-body"><h3>Tapicería &amp; Sofás</h3><p>Retapizamos y creamos sofás con telas de alta calidad.</p><span class="pcard-lnk">Ver más ↓</span></div></a>
+    <a href="#cocinas" class="pcard"><div class="pcard-img"><img src="img/cocinas.jpg" alt="Cocinas integrales" loading="lazy"></div><div class="pcard-body"><h3>Cocinas integrales</h3><p>Prácticas y modernas, adaptadas al milímetro a tu espacio.</p><span class="pcard-lnk">Ver más ↓</span></div></a>
+    <a href="#escaleras" class="pcard"><div class="pcard-img"><img src="img/escaleras.jpg" alt="Escaleras en madera" loading="lazy"></div><div class="pcard-body"><h3>Escaleras en madera</h3><p>Diseños que combinan seguridad, estilo y elegancia.</p><span class="pcard-lnk">Ver más ↓</span></div></a>
+    <a href="#otros" class="pcard"><div class="pcard-icon">🔨</div><div class="pcard-body"><h3>Closets y más</h3><p>Closets, bibliotecas, restauración de muebles, escritorios y más.</p><span class="pcard-lnk">Ver más ↓</span></div></a>
+  </div>
+</section>
+
+<!-- ─ DETALLE POR CATEGORÍA ───────────────────────────────── -->
+<section class="wrap" style="padding:40px 24px 20px">
+
+  <div class="detail-row" id="comedores">
+    <div class="detail-img"><img src="img/comedor.jpg" alt="Comedor a medida en madera" loading="lazy"></div>
+    <div class="detail-tx">
+      <span class="label">Comedores</span>
+      <h3>El punto de encuentro de tu hogar</h3>
+      <p>Diseñamos comedores para el número de personas y el espacio real que tienes, en la madera y el acabado que prefieras: desde líneas clásicas hasta diseños minimalistas.</p>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20cotizar%20un%20comedor%20a%20medida" target="_blank" rel="noopener" class="btn btn-dark">Cotizar comedor</a>
+    </div>
+  </div>
+
+  <div class="detail-row reverse" id="salas">
+    <div class="detail-img"><img src="img/sala.jpg" alt="Sala a medida" loading="lazy"></div>
+    <div class="detail-tx">
+      <span class="label">Salas</span>
+      <h3>Muebles de sala pensados para tu día a día</h3>
+      <p>Centros de entretenimiento, mesas auxiliares y muebles modulares diseñados para aprovechar cada rincón de tu sala, con acabados que combinan con tu estilo.</p>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20cotizar%20muebles%20de%20sala" target="_blank" rel="noopener" class="btn btn-dark">Cotizar sala</a>
+    </div>
+  </div>
+
+  <div class="detail-row" id="tapiceria">
+    <div class="detail-img"><img src="img/sofas.jpg" alt="Tapicería de sofás" loading="lazy"></div>
+    <div class="detail-tx">
+      <span class="label">Tapicería &amp; Sofás</span>
+      <h3>Dale una segunda vida a tus muebles</h3>
+      <p>Retapizamos sofás, sillas y poltronas con telas de alta calidad, y también fabricamos sofás nuevos a medida. Te asesoramos en tela, color y textura.</p>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20cotizar%20tapicería%20o%20retapizado" target="_blank" rel="noopener" class="btn btn-dark">Cotizar tapicería</a>
+    </div>
+  </div>
+
+  <div class="detail-row reverse" id="cocinas">
+    <div class="detail-img"><img src="img/cocinas.jpg" alt="Cocina integral a medida" loading="lazy"></div>
+    <div class="detail-tx">
+      <span class="label">Cocinas integrales</span>
+      <h3>Cocinas funcionales, al milímetro</h3>
+      <p>Diseñamos la distribución de tu cocina pensando en cómo la usas: almacenamiento, mesón y acabados en madera resistentes a la humedad y al uso diario.</p>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20cotizar%20una%20cocina%20integral" target="_blank" rel="noopener" class="btn btn-dark">Cotizar cocina</a>
+    </div>
+  </div>
+
+  <div class="detail-row" id="escaleras">
+    <div class="detail-img"><img src="img/escaleras.jpg" alt="Escalera en madera" loading="lazy"></div>
+    <div class="detail-tx">
+      <span class="label">Escaleras en madera</span>
+      <h3>Seguridad y estilo en cada paso</h3>
+      <p>Fabricamos e instalamos escaleras en madera a la medida exacta de tu espacio, cuidando tanto la resistencia estructural como el diseño.</p>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20cotizar%20una%20escalera%20en%20madera" target="_blank" rel="noopener" class="btn btn-dark">Cotizar escalera</a>
+    </div>
+  </div>
+
+  <div class="detail-row reverse" id="otros">
+    <div class="detail-img"><img src="img/tienda_inicio.jpeg" alt="Taller Carpincon" loading="lazy"></div>
+    <div class="detail-tx">
+      <span class="label">Closets, bibliotecas y restauración</span>
+      <h3>Y todo lo demás que necesites</h3>
+      <p>Closets, bibliotecas, escritorios y restauración de muebles: si tienes una idea o un mueble que quieres recuperar, cuéntanos y te decimos cómo hacerlo posible.</p>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20cotizar%20otro%20proyecto" target="_blank" rel="noopener" class="btn btn-dark">Cotizar proyecto</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ─ COTIZACIÓN ──────────────────────────────────────────── -->
+<section class="cot" id="cotizacion">
+  <div class="cot-in">
+    <div class="cot-hdr">
+      <span class="label">Sin costo · Sin compromiso</span>
+      <h2 class="title">Solicita tu cotización gratis</h2>
+      <p class="sub">Cuéntanos qué necesitas y te respondemos en menos de 24 horas con un presupuesto detallado.</p>
+    </div>
+    <div class="cot-card">
+      <form id="formulario">
+        <input type="hidden" id="origen" value="productos">
+        <div class="frow">
+          <div class="fg"><label for="nombre">Tu nombre</label><input type="text" id="nombre" placeholder="Ej. María García" required></div>
+          <div class="fg"><label for="telefono">Celular</label><input type="tel" id="telefono" placeholder="3XX XXX XXXX" required></div>
+          <div class="fg"><label for="correo">Correo electrónico</label><input type="email" id="correo" placeholder="tuemail@correo.com" required></div>
+          <div class="fg">
+            <label for="tipo">¿Qué necesitas?</label>
+            <select id="tipo">
+              <option value="">— Selecciona —</option>
+              <option>Comedor a medida</option>
+              <option>Sala / sofás</option>
+              <option>Cocina integral</option>
+              <option>Closet / armario</option>
+              <option>Escalera en madera</option>
+              <option>Tapicería / retapizado</option>
+              <option>Restauración de mueble</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="fg full"><label for="mensaje">Cuéntanos más detalles</label><textarea id="mensaje" placeholder="Ej. Necesito un comedor para 6 personas en madera oscura…" required></textarea></div>
+        </div>
+        <div class="factions">
+          <button type="submit" class="btn btn-dark">Enviar solicitud</button>
+          <div class="divider">o si prefieres</div>
+          <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-form">💬 Escribirnos por WhatsApp directamente</a>
+        </div>
+        <p id="mensaje-error" class="fmsg err" style="display:none;">❌ Hubo un error al enviar. Inténtalo nuevamente.</p>
+        <p id="mensaje-exito" class="fmsg ok" style="display:none;">✅ ¡Solicitud enviada! Te contactamos en menos de 24 horas.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ─ FOOTER ──────────────────────────────────────────────── -->
+<footer class="ft">
+  <div class="ft-grid">
+    <div>
+      <div class="ft-brand"><img src="img/new_log.jpeg" alt="Logo Carpincon"><span>Inversiones Carpincon</span></div>
+      <p class="ft-desc">Carpintería y tapicería premium en Bogotá. Fabricamos muebles a medida con materiales de primera calidad.</p>
+      <div class="ft-redes">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="ft-red">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="ft-red">🎵 TikTok</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-h">Navegación</div>
+      <ul class="ft-links">
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos_y_servicios.html">Productos</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html#cotizacion">Cotizar gratis</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-h">Contacto</div>
+      <div class="ft-ci">💬 <a href="https://wa.me/573246884807" style="color:inherit">+57 324 688 4807</a></div>
+      <div class="ft-ci">📍 <span>Bogotá, Colombia</span></div>
+      <div class="ft-ci">🕐 <span>Lun – Sáb: 8am – 6pm</span></div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2025 Inversiones Carpincon. Todos los derechos reservados.</span>
+    <span>Hecho con 🪵 en Bogotá</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <span class="ic">💬</span><span class="txt">Cotizar por WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+<script>
+  function toggleNav() {
+    var nav = document.querySelector('.nav');
+    if (!nav) return;
+    var open = nav.style.display === 'flex';
+    nav.style.display       = open ? '' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.position      = open ? '' : 'absolute';
+    nav.style.top           = open ? '' : '66px';
+    nav.style.left          = open ? '' : '0';
+    nav.style.right         = open ? '' : '0';
+    nav.style.background    = open ? '' : '#FAFAF7';
+    nav.style.padding       = open ? '' : '16px 24px';
+    nav.style.borderBottom  = open ? '' : '1px solid #DDD6C9';
+    nav.style.boxShadow     = open ? '' : '0 8px 24px rgba(0,0,0,.07)';
+    nav.style.zIndex        = open ? '' : '99';
+  }
+</script>
+
+</body>
+</html>

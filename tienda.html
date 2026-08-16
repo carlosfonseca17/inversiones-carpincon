@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tienda | Carpincon — Bogotá</title>
+  <meta name="description" content="Explora el catálogo de Carpincon: comedores, salas, cocinas, closets, escaleras y tapicería. Cotiza el mueble que necesitas por WhatsApp.">
+  <link rel="icon" href="img/new_log.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─ HEADER ──────────────────────────────────────────────── -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="/" class="logo">
+      <img src="img/new_log.jpeg" alt="Logo Carpincon">
+      <div>
+        <div class="logo-name">Carpincon</div>
+        <div class="logo-tag">Carpintería &amp; Tapicería</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="quienessomos.html">Quiénes somos</a>
+      <a href="productos_y_servicios.html">Productos</a>
+      <a href="tienda.html" class="activo">Tienda</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="hdr-cta">
+      <div class="hdr-icons">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="hdr-icon" aria-label="Instagram">📸</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="hdr-icon" aria-label="TikTok">🎵</a>
+      </div>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-hdr">💬 WhatsApp</a>
+      <button class="hmb" aria-label="Abrir menú" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ─ PAGE HERO ───────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="hero-bg" style="background-image:url('img/tienda1.png')"></div>
+  <div class="hero-ov"></div>
+  <div class="page-hero-body">
+    <div class="hero-tag">✦ Catálogo</div>
+    <h1>Tienda</h1>
+    <p>Un vistazo a lo que fabricamos. Cada pieza se ajusta a tus medidas, materiales y presupuesto — escríbenos y la hacemos realidad.</p>
+  </div>
+</section>
+
+<!-- ─ INTRO + FILTROS ─────────────────────────────────────── -->
+<section class="prods">
+  <div class="tienda-intro">
+    <span class="label">Explora por categoría</span>
+    <h2 class="title">Encuentra tu próximo mueble</h2>
+    <p class="sub" style="margin:0 auto">Todas las piezas se fabrican a medida. Haz clic en cualquier pieza del catálogo para ver todas las fotos, medidas, precios y opciones de madera.</p>
+  </div>
+
+  <div class="filtros" id="filtros">
+    <button class="filtro-btn activo" data-cat="todos">Todos</button>
+    <button class="filtro-btn" data-cat="comedores">Comedores</button>
+    <button class="filtro-btn" data-cat="sillas">Sillas</button>
+    <button class="filtro-btn" data-cat="salas">Salas</button>
+    <button class="filtro-btn" data-cat="tapiceria">Tapicería &amp; Sofás</button>
+    <button class="filtro-btn" data-cat="dormitorios">Dormitorios</button>
+    <button class="filtro-btn" data-cat="escritorios">Escritorios</button>
+    <button class="filtro-btn" data-cat="cocinas">Cocinas</button>
+    <button class="filtro-btn" data-cat="escaleras">Escaleras</button>
+    <button class="filtro-btn" data-cat="closets">Closets &amp; otros</button>
+  </div>
+
+  <div class="prods-grid" id="grid-productos">
+
+    <div class="pcard cat-card" data-cat="comedores">
+      <div class="pcard-img"><img src="img/comedor.jpg" alt="Comedor a medida" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor a medida</h3>
+        <p>En la madera, tamaño y acabado que necesites para tu espacio.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20cotizar%20un%20comedor%20a%20medida" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="salas">
+      <div class="pcard-img"><img src="img/sala.jpg" alt="Muebles de sala a medida" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Sala a medida</h3>
+        <p>Muebles modulares y centros de entretenimiento hechos para tu sala.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20cotizar%20muebles%20de%20sala" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria">
+      <div class="pcard-img"><img src="img/sofas.jpg" alt="Sofás y tapicería" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Sofás &amp; tapicería</h3>
+        <p>Sofás nuevos o retapizado de muebles existentes con telas premium.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20cotizar%20tapicería%20o%20un%20sofá" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="cocinas">
+      <div class="pcard-img"><img src="img/cocinas.jpg" alt="Cocina integral a medida" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cocina integral</h3>
+        <p>Diseño de cocina completo, adaptado al milímetro a tu espacio.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20cotizar%20una%20cocina%20integral" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escaleras">
+      <div class="pcard-img"><img src="img/escaleras.jpg" alt="Escalera en madera" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escalera en madera</h3>
+        <p>Fabricación e instalación de escaleras a medida, seguras y elegantes.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20cotizar%20una%20escalera%20en%20madera" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="closets">
+      <div class="pcard-icon">🚪</div>
+      <div class="pcard-body">
+        <h3>Closet / armario</h3>
+        <p>Closets a medida, incluso para espacios con techos inclinados o formas irregulares.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20cotizar%20un%20closet%20a%20medida" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="closets">
+      <div class="pcard-icon">🛠️</div>
+      <div class="pcard-body">
+        <h3>Restauración de muebles</h3>
+        <p>Recuperamos muebles con valor sentimental o piezas antiguas que quieres conservar.</p>
+        <a href="https://wa.me/573246884807?text=Hola%2C%20me%20interesa%20restaurar%20un%20mueble" target="_blank" rel="noopener" class="pcard-lnk">💬 Cotizar por WhatsApp</a>
+      </div>
+    </div>
+
+    
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-oslo-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-oslo-premium.jpg" alt="Cómoda Oslo Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Oslo Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-madera-ebano-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-madera-ebano-premium.jpg" alt="Cómoda Madera Ébano Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Madera Ébano Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-natural-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-natural-premium.jpg" alt="Cómoda Natural Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Natural Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-natural-linea-recta'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-natural-linea-recta.jpg" alt="Cómoda Natural Línea Recta" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Natural Línea Recta</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.090.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-curva-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-curva-premium.jpg" alt="Cómoda Curva Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Curva Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.490.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-oscura-deluxe'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-oscura-deluxe.jpg" alt="Cómoda Oscura Deluxe" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Oscura Deluxe</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-walnut-classic-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-walnut-classic-premium.jpg" alt="Cómoda Walnut Classic Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Walnut Classic Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.390.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-escandinava-pro'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-escandinava-pro.jpg" alt="Cómoda Escandinava Pro" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Escandinava Pro</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['comoda-flotante-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comodas/comoda-flotante-premium.jpg" alt="Cómoda Flotante Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cómoda Flotante Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.490.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="salas" onclick="abrirModal(productos['poltrona-aura'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/poltronas/poltrona-aura.jpg" alt="Poltrona Aura" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Poltrona Aura</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.368.500</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="salas" onclick="abrirModal(productos['poltrona-linnea'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/poltronas/poltrona-linnea.jpg" alt="Poltrona Linnea" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Poltrona Linnea</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.483.500</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="salas" onclick="abrirModal(productos['poltrona-onix'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/poltronas/poltrona-onix.jpg" alt="Poltrona Ónix" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Poltrona Ónix</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.598.500</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="salas" onclick="abrirModal(productos['poltrona-bosco'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/poltronas/poltrona-bosco.jpg" alt="Poltrona Bosco" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Poltrona Bosco</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.426.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="salas" onclick="abrirModal(productos['poltrona-nebula'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/poltronas/poltrona-nebula.jpg" alt="Poltrona Nébula" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Poltrona Nébula</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.828.500</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-montecarlo'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-montecarlo.jpg" alt="Escritorio Montecarlo" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Montecarlo</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.350.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-kronos'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-kronos.jpg" alt="Escritorio Kronos (con cajón)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Kronos (con cajón)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.520.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-valhalla'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-valhalla.jpg" alt="Escritorio Valhalla" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Valhalla</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.720.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-altair-sin-cajon'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-altair-sin-cajon.jpg" alt="Escritorio Altair (sin cajón)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Altair (sin cajón)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.350.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-altair-con-cajon'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-altair-con-cajon.jpg" alt="Escritorio Altair (con cajón)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Altair (con cajón)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.520.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-milan-sin-cajon'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-milan-sin-cajon.jpg" alt="Escritorio Milan (sin cajón)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Milan (sin cajón)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.350.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-milan-con-cajon'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-milan-con-cajon.jpg" alt="Escritorio Milan (con cajón)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Milan (con cajón)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.520.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="escritorios" onclick="abrirModal(productos['escritorio-imperial'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/escritorios/escritorio-imperial.jpg" alt="Escritorio Imperial" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Escritorio Imperial</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.790.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-boston-slim'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-boston-slim.jpg" alt="Boston Slim Cama" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Boston Slim Cama</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-boston-slim-elite'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-boston-slim-elite.jpg" alt="Boston Slim Cama Élite" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Boston Slim Cama Élite</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.090.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-amsterdam-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-amsterdam-premium.jpg" alt="Ámsterdam Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Ámsterdam Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $5.390.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-amsterdam-beige'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-amsterdam-beige.jpg" alt="Ámsterdam Premium Beige" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Ámsterdam Premium Beige</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $5.390.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-oslo-master'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-oslo-master.jpg" alt="Oslo Master" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Oslo Master</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $5.790.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-monaco-compact'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-monaco-compact.jpg" alt="Mónaco Compact" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mónaco Compact</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-verona-premium'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-verona-premium.jpg" alt="Verona Premium" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Verona Premium</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="tapiceria" onclick="abrirModal(productos['sofacama-verona-curvo-signature'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sofacamas/sofacama-verona-curvo-signature.jpg" alt="Verona Curvo Signature" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Verona Curvo Signature</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-firenz'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-firenz.jpg" alt="Mesa Firenz Redonda" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Firenz Redonda</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-royale'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-royale.jpg" alt="Mesa Royale" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Royale</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.390.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-bellagio'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-bellagio.jpg" alt="Mesa Bellagio Redonda" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Bellagio Redonda</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-prestige'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-prestige.jpg" alt="Comedor Prestige" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Prestige</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-altamira'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-altamira.jpg" alt="Comedor Altamira" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Altamira</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-signature'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-signature.jpg" alt="Comedor Signature" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Signature</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-zafiro'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-zafiro.jpg" alt="Comedor Zafiro" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Zafiro</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-astreon'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-astreon.jpg" alt="Mesa Astreon" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Astreon</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-kaizen'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-kaizen.jpg" alt="Mesa Kaizen" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Kaizen</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-ravello'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-ravello.jpg" alt="Mesa Ravello" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Ravello</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-altho'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-altho.jpg" alt="Comedor Altho" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Altho</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.590.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-norvian'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-norvian.jpg" alt="Comedor Norvian" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Norvian</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.590.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-arkanis-oval'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-arkanis-oval.jpg" alt="Mesa Arkanis Oval" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Arkanis Oval</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $3.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-volterra'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-volterra.jpg" alt="Mesa Volterra" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Volterra</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-celestiam'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-celestiam.jpg" alt="Mesa Celestiam" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Celestiam</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.590.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-elisor'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-elisor.jpg" alt="Mesa Elisor" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Elisor</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-syl'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-syl.jpg" alt="Mesa Syl" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa Syl</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.590.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-orunox'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-orunox.jpg" alt="Comedor Orunox" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Orunox</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+    <div class="pcard cat-card" data-cat="comedores" onclick="abrirModal(productos['comedor-sosmo-2'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/comedores/comedor-sosmo-2.jpg" alt="Comedor Sosmo.2" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Comedor Sosmo.2</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-luxor'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-luxor.jpg" alt="Silla Luxor" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Luxor</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-zenith'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-zenith.jpg" alt="Silla Zenith" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Zenith</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.580.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-nebula'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-nebula.jpg" alt="Silla Nébula" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Nébula</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-astorya'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-astorya.jpg" alt="Silla Astorya" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Astorya</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-verona'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-verona.jpg" alt="Silla Verona" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Verona</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-luxor-sin-brazo'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-luxor-sin-brazo.jpg" alt="Silla Luxor (sin brazo)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Luxor (sin brazo)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-fonsi-1'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-fonsi-1.jpg" alt="Silla Fonsi" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Fonsi</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-delta'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-delta.jpg" alt="Silla Delta" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Delta</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-fonsi-2'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-fonsi-2.jpg" alt="Silla Fonsi (cow horn)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Fonsi (cow horn)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-caelus'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-caelus.jpg" alt="Silla Caelus" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Caelus</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.090.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-zephyrus'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-zephyrus.jpg" alt="Silla Zephyrus" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Zephyrus</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-obsidiana'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-obsidiana.jpg" alt="Silla Obsidiana" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Obsidiana</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $990.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="sillas" onclick="abrirModal(productos['silla-aeternum'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/sillas/silla-aeternum.jpg" alt="Silla Aeternum" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Silla Aeternum</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $860.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-nyxara'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-nyxara.jpg" alt="Cama Nyxara" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Nyxara</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-kaelis'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-kaelis.jpg" alt="Cama Kaelis" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Kaelis</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-seul'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-seul.jpg" alt="Cama Seúl" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Seúl</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-lysandor'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-lysandor.jpg" alt="Cama Lysandor" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Lysandor</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.790.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['base-cama-azurio-tapizada'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/base-cama-azurio-tapizada.jpg" alt="Base Cama Azurio Tapizada" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Base Cama Azurio Tapizada</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.390.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['base-cama-azurio'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/base-cama-azurio.jpg" alt="Base Cama Azurio" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Base Cama Azurio</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-noctis'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-noctis.jpg" alt="Cama Noctis" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Noctis</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-orpheon'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-orpheon.jpg" alt="Cama Orpheon" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Orpheon</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['base-cama-vespera'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/base-cama-vespera.jpg" alt="Base Cama Vespera" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Base Cama Vespera</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.290.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-soltice'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-soltice.jpg" alt="Cama Soltice" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Soltice</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $4.890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['cama-draven'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/cama-draven.jpg" alt="Cama Draven" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Cama Draven</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $2.790.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-arkena'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-arkena.jpg" alt="Mesa de Noche Arkena" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Arkena</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-top-1'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-top-1.jpg" alt="Mesa de Noche Top" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Top</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.090.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-thalor'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-thalor.jpg" alt="Mesa de Noche Thalor" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Thalor</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.220.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-velior'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-velior.jpg" alt="Mesa de Noche Velior" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Velior</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.130.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-mirave'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-mirave.jpg" alt="Mesa de Noche Mirave" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Mirave</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-evander'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-evander.jpg" alt="Mesa de Noche Evander" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Evander</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.250.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-color'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-color.jpg" alt="Mesa de Noche Color" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Color</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $890.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-ratan'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-ratan.jpg" alt="Mesa de Noche Ratán" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Ratán</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.390.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+    <div class="pcard cat-card" data-cat="dormitorios" onclick="abrirModal(productos['mesa-noche-top-2'])" style="cursor:pointer;">
+      <div class="pcard-img"><img src="img/dormitorios/mesa-noche-top-2.jpg" alt="Mesa de Noche Top (cubo)" loading="lazy"></div>
+      <div class="pcard-body">
+        <h3>Mesa de Noche Top (cubo)</h3>
+        <p class="pcard-price" style="font-weight:600;margin:2px 0 10px;color:#8a6d3b;">Desde $1.190.000</p>
+        <span class="pcard-lnk">👁 Ver fotos, medidas y maderas</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─ MODAL DE PRODUCTO (usa las funciones de script.js) ──── -->
+<div id="modal">
+  <div class="contenido-modal">
+    <button class="modal-cerrar" onclick="cerrarModal()" aria-label="Cerrar">✕</button>
+    <div class="modal-galeria">
+      <span id="flecha-izquierda" class="flecha flecha-izquierda oculta" onclick="cambiarImagen(-1)">‹</span>
+      <img id="modal-imagen" src="" alt="">
+      <span id="flecha-derecha" class="flecha flecha-derecha oculta" onclick="cambiarImagen(1)">›</span>
+    </div>
+    <div class="modal-info">
+      <span id="modal-categoria" class="modal-categoria"></span>
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-subtitulo"></p>
+
+      <div class="opciones-grupo">
+        <span class="opciones-label">Medidas y precios</span>
+        <div id="contenedor-medidas" class="contenedor-opciones"></div>
+      </div>
+
+      <div class="opciones-grupo">
+        <span class="opciones-label">Elige tu madera</span>
+        <div id="contenedor-maderas" class="contenedor-opciones"></div>
+      </div>
+
+      <a id="whatsapp-consulta" href="#" target="_blank" rel="noopener" class="btn-wa-form">💬 Cotizar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- ─ COTIZACIÓN ──────────────────────────────────────────── -->
+<section class="cot" id="cotizacion">
+  <div class="cot-in">
+    <div class="cot-hdr">
+      <span class="label">Sin costo · Sin compromiso</span>
+      <h2 class="title">¿No encuentras lo que buscas?</h2>
+      <p class="sub">Cuéntanos qué necesitas y te respondemos en menos de 24 horas con un presupuesto detallado.</p>
+    </div>
+    <div class="cot-card">
+      <form id="formulario">
+        <input type="hidden" id="origen" value="tienda">
+        <div class="frow">
+          <div class="fg"><label for="nombre">Tu nombre</label><input type="text" id="nombre" placeholder="Ej. María García" required></div>
+          <div class="fg"><label for="telefono">Celular</label><input type="tel" id="telefono" placeholder="3XX XXX XXXX" required></div>
+          <div class="fg"><label for="correo">Correo electrónico</label><input type="email" id="correo" placeholder="tuemail@correo.com" required></div>
+          <div class="fg">
+            <label for="tipo">¿Qué necesitas?</label>
+            <select id="tipo">
+              <option value="">— Selecciona —</option>
+              <option>Comedor a medida</option>
+              <option>Sala / sofás</option>
+              <option>Cocina integral</option>
+              <option>Closet / armario</option>
+              <option>Escalera en madera</option>
+              <option>Tapicería / retapizado</option>
+              <option>Restauración de mueble</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="fg full"><label for="mensaje">Cuéntanos más detalles</label><textarea id="mensaje" placeholder="Ej. Necesito un comedor para 6 personas en madera oscura…" required></textarea></div>
+        </div>
+        <div class="factions">
+          <button type="submit" class="btn btn-dark">Enviar solicitud</button>
+          <div class="divider">o si prefieres</div>
+          <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-form">💬 Escribirnos por WhatsApp directamente</a>
+        </div>
+        <p id="mensaje-error" class="fmsg err" style="display:none;">❌ Hubo un error al enviar. Inténtalo nuevamente.</p>
+        <p id="mensaje-exito" class="fmsg ok" style="display:none;">✅ ¡Solicitud enviada! Te contactamos en menos de 24 horas.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ─ FOOTER ──────────────────────────────────────────────── -->
+<footer class="ft">
+  <div class="ft-grid">
+    <div>
+      <div class="ft-brand"><img src="img/new_log.jpeg" alt="Logo Carpincon"><span>Inversiones Carpincon</span></div>
+      <p class="ft-desc">Carpintería y tapicería premium en Bogotá. Fabricamos muebles a medida con materiales de primera calidad.</p>
+      <div class="ft-redes">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="ft-red">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="ft-red">🎵 TikTok</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-h">Navegación</div>
+      <ul class="ft-links">
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos_y_servicios.html">Productos</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html#cotizacion">Cotizar gratis</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-h">Contacto</div>
+      <div class="ft-ci">💬 <a href="https://wa.me/573246884807" style="color:inherit">+57 324 688 4807</a></div>
+      <div class="ft-ci">📍 <span>Bogotá, Colombia</span></div>
+      <div class="ft-ci">🕐 <span>Lun – Sáb: 8am – 6pm</span></div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2025 Inversiones Carpincon. Todos los derechos reservados.</span>
+    <span>Hecho con 🪵 en Bogotá</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <span class="ic">💬</span><span class="txt">Cotizar por WhatsApp</span>
+</a>
+
+<script>
+const productos = {"comoda-oslo-premium": {"categoria": "Cómodas", "titulo": "Cómoda Oslo Premium", "subtitulo": "Diseño moderno, limpio y elegante, con base metálica negra y acabado en madera clara.", "imagenes": ["img/comodas/comoda-oslo-premium.jpg", "img/comodas/comoda-oslo-premium-2.jpg", "img/comodas/comoda-oslo-premium-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.290.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$4.090.000"}, {"etiqueta": "8 cajones (180×45×85 cm)", "precio": "$4.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-madera-ebano-premium": {"categoria": "Cómodas", "titulo": "Cómoda Madera Ébano Premium", "subtitulo": "Estilo sobrio y sofisticado, ideal para ambientes modernos con acabados oscuros.", "imagenes": ["img/comodas/comoda-madera-ebano-premium.jpg", "img/comodas/comoda-madera-ebano-premium-2.jpg", "img/comodas/comoda-madera-ebano-premium-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.190.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$3.990.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$4.790.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-natural-premium": {"categoria": "Cómodas", "titulo": "Cómoda Natural Premium", "subtitulo": "Diseño cálido y elegante, con base metálica y presencia liviana para espacios modernos.", "imagenes": ["img/comodas/comoda-natural-premium.jpg", "img/comodas/comoda-natural-premium-2.jpg", "img/comodas/comoda-natural-premium-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.290.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$4.090.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$4.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-natural-linea-recta": {"categoria": "Cómodas", "titulo": "Cómoda Natural Línea Recta", "subtitulo": "Acabado claro, diseño minimalista y estructura limpia para habitaciones premium.", "imagenes": ["img/comodas/comoda-natural-linea-recta.jpg", "img/comodas/comoda-natural-linea-recta-2.jpg", "img/comodas/comoda-natural-linea-recta-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.090.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$3.890.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$4.690.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-curva-premium": {"categoria": "Cómodas", "titulo": "Cómoda Curva Premium", "subtitulo": "Diseño elegante con bordes suaves y acabados finos, de apariencia exclusiva.", "imagenes": ["img/comodas/comoda-curva-premium.jpg", "img/comodas/comoda-curva-premium-2.jpg", "img/comodas/comoda-curva-premium-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.490.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$4.290.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$5.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-oscura-deluxe": {"categoria": "Cómodas", "titulo": "Cómoda Oscura Deluxe", "subtitulo": "Línea fuerte y contemporánea, con presencia elegante y acabado premium.", "imagenes": ["img/comodas/comoda-oscura-deluxe.jpg", "img/comodas/comoda-oscura-deluxe-2.jpg", "img/comodas/comoda-oscura-deluxe-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.290.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$4.190.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$4.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-walnut-classic-premium": {"categoria": "Cómodas", "titulo": "Cómoda Walnut Classic Premium", "subtitulo": "Madera oscura con diseño cálido y sofisticado, perfecta para una habitación principal.", "imagenes": ["img/comodas/comoda-walnut-classic-premium.jpg", "img/comodas/comoda-walnut-classic-premium-2.jpg", "img/comodas/comoda-walnut-classic-premium-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.390.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$4.190.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$4.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-escandinava-pro": {"categoria": "Cómodas", "titulo": "Cómoda Escandinava Pro", "subtitulo": "Diseño limpio, moderno y funcional, con una estética premium muy vendible.", "imagenes": ["img/comodas/comoda-escandinava-pro.jpg", "img/comodas/comoda-escandinava-pro-2.jpg", "img/comodas/comoda-escandinava-pro-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.190.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$3.990.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$4.790.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comoda-flotante-premium": {"categoria": "Cómodas", "titulo": "Cómoda Flotante Premium", "subtitulo": "Estilo elegante y minimalista, con apariencia suspendida y acabados de alta gama.", "imagenes": ["img/comodas/comoda-flotante-premium.jpg", "img/comodas/comoda-flotante-premium-2.jpg", "img/comodas/comoda-flotante-premium-3.jpg"], "medidas": [{"etiqueta": "4 cajones (120×45×85 cm)", "precio": "$3.490.000"}, {"etiqueta": "6 cajones (160×45×85 cm)", "precio": "$4.290.000"}, {"etiqueta": "8 cajones (200×45×85 cm)", "precio": "$5.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "poltrona-aura": {"categoria": "Poltronas", "titulo": "Poltrona Aura", "subtitulo": "78 × 82 × 72 cm (An × Prof × Alt).", "imagenes": ["img/poltronas/poltrona-aura.jpg", "img/poltronas/poltrona-aura-1.jpg", "img/poltronas/poltrona-aura-2.jpg", "img/poltronas/poltrona-aura-3.jpg", "img/poltronas/poltrona-aura-4.jpg"], "medidas": [{"etiqueta": "Precio", "precio": "$1.368.500 COP"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "poltrona-linnea": {"categoria": "Poltronas", "titulo": "Poltrona Linnea", "subtitulo": "76 × 80 × 86 cm (An × Prof × Alt).", "imagenes": ["img/poltronas/poltrona-linnea.jpg", "img/poltronas/poltrona-linnea-1.jpg", "img/poltronas/poltrona-linnea-2.jpg", "img/poltronas/poltrona-linnea-3.jpg", "img/poltronas/poltrona-linnea-4.jpg"], "medidas": [{"etiqueta": "Precio", "precio": "$1.483.500 COP"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "poltrona-onix": {"categoria": "Poltronas", "titulo": "Poltrona Ónix", "subtitulo": "80 × 84 × 88 cm (An × Prof × Alt).", "imagenes": ["img/poltronas/poltrona-onix.jpg", "img/poltronas/poltrona-onix-1.jpg", "img/poltronas/poltrona-onix-2.jpg", "img/poltronas/poltrona-onix-3.jpg", "img/poltronas/poltrona-onix-4.jpg"], "medidas": [{"etiqueta": "Precio", "precio": "$1.598.500 COP"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "poltrona-bosco": {"categoria": "Poltronas", "titulo": "Poltrona Bosco", "subtitulo": "77 × 82 × 84 cm (An × Prof × Alt).", "imagenes": ["img/poltronas/poltrona-bosco.jpg", "img/poltronas/poltrona-bosco-1.jpg", "img/poltronas/poltrona-bosco-2.jpg", "img/poltronas/poltrona-bosco-3.jpg", "img/poltronas/poltrona-bosco-4.jpg"], "medidas": [{"etiqueta": "Precio", "precio": "$1.426.000 COP"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "poltrona-nebula": {"categoria": "Poltronas", "titulo": "Poltrona Nébula", "subtitulo": "82 × 88 × 90 cm (An × Prof × Alt).", "imagenes": ["img/poltronas/poltrona-nebula.jpg", "img/poltronas/poltrona-nebula-1.jpg", "img/poltronas/poltrona-nebula-2.jpg", "img/poltronas/poltrona-nebula-3.jpg", "img/poltronas/poltrona-nebula-4.jpg"], "medidas": [{"etiqueta": "Precio", "precio": "$1.828.500 COP"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-montecarlo": {"categoria": "Escritorios", "titulo": "Escritorio Montecarlo", "subtitulo": "Estructura en madera maciza tipo caballete, líneas simples y atemporales.", "imagenes": ["img/escritorios/escritorio-montecarlo.jpg", "img/escritorios/escritorio-montecarlo-2.jpg", "img/escritorios/escritorio-montecarlo-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76 alto", "precio": "$1.350.000"}, {"etiqueta": "120-140×50-60×76", "precio": "$1.660.000"}, {"etiqueta": "150-170×60-80×76", "precio": "$2.120.000"}, {"etiqueta": "180-200×60-80×76", "precio": "$2.550.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-kronos": {"categoria": "Escritorios", "titulo": "Escritorio Kronos (con cajón)", "subtitulo": "Escritorio robusto con cajones integrados, ideal para oficina en casa.", "imagenes": ["img/escritorios/escritorio-kronos.jpg", "img/escritorios/escritorio-kronos-2.jpg", "img/escritorios/escritorio-kronos-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76 (1 cajón)", "precio": "$1.520.000"}, {"etiqueta": "120-140×50-60×76 (2 cajones)", "precio": "$1.990.000"}, {"etiqueta": "150-170×60-80×76 (3 cajones)", "precio": "$2.590.000"}, {"etiqueta": "180-200×60-80×76 (3 cajones)", "precio": "$2.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-valhalla": {"categoria": "Escritorios", "titulo": "Escritorio Valhalla", "subtitulo": "Líneas curvas suaves en la estructura, acabado en madera oscura.", "imagenes": ["img/escritorios/escritorio-valhalla.jpg", "img/escritorios/escritorio-valhalla-2.jpg", "img/escritorios/escritorio-valhalla-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76", "precio": "$1.720.000"}, {"etiqueta": "120-140×50-60×76", "precio": "$1.890.000"}, {"etiqueta": "150-170×60-80×76", "precio": "$2.490.000"}, {"etiqueta": "180-200×60-80×76", "precio": "$2.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-altair-sin-cajon": {"categoria": "Escritorios", "titulo": "Escritorio Altair (sin cajón)", "subtitulo": "Diseño minimalista en madera de nogal con travesaño inferior.", "imagenes": ["img/escritorios/escritorio-altair-sin-cajon.jpg", "img/escritorios/escritorio-altair-sin-cajon-2.jpg", "img/escritorios/escritorio-altair-sin-cajon-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76", "precio": "$1.350.000"}, {"etiqueta": "120-140×50-60×76", "precio": "$1.660.000"}, {"etiqueta": "150-170×60-80×76", "precio": "$2.120.000"}, {"etiqueta": "180-200×60-80×76", "precio": "$2.550.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-altair-con-cajon": {"categoria": "Escritorios", "titulo": "Escritorio Altair (con cajón)", "subtitulo": "La versión de Altair con cajón integrado para guardado.", "imagenes": ["img/escritorios/escritorio-altair-con-cajon.jpg", "img/escritorios/escritorio-altair-con-cajon-2.jpg", "img/escritorios/escritorio-altair-con-cajon-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76 (1 cajón)", "precio": "$1.520.000"}, {"etiqueta": "120-140×50-60×76 (2 cajones)", "precio": "$1.990.000"}, {"etiqueta": "150-170×60-80×76 (3 cajones)", "precio": "$2.590.000"}, {"etiqueta": "180-200×60-80×76 (3 cajones)", "precio": "$2.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-milan-sin-cajon": {"categoria": "Escritorios", "titulo": "Escritorio Milan (sin cajón)", "subtitulo": "Acabado claro en madera natural, patas torneadas y líneas redondeadas.", "imagenes": ["img/escritorios/escritorio-milan-sin-cajon.jpg", "img/escritorios/escritorio-milan-sin-cajon-2.jpg", "img/escritorios/escritorio-milan-sin-cajon-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76", "precio": "$1.350.000"}, {"etiqueta": "120-140×50-60×76", "precio": "$1.660.000"}, {"etiqueta": "150-170×60-80×76", "precio": "$2.120.000"}, {"etiqueta": "180-200×60-80×76", "precio": "$2.550.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-milan-con-cajon": {"categoria": "Escritorios", "titulo": "Escritorio Milan (con cajón)", "subtitulo": "La versión de Milan con cajón integrado para guardado.", "imagenes": ["img/escritorios/escritorio-milan-con-cajon.jpg", "img/escritorios/escritorio-milan-con-cajon-2.jpg", "img/escritorios/escritorio-milan-con-cajon-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76 (1 cajón)", "precio": "$1.520.000"}, {"etiqueta": "120-140×50-60×76 (2 cajones)", "precio": "$1.990.000"}, {"etiqueta": "150-170×60-80×76 (3 cajones)", "precio": "$2.590.000"}, {"etiqueta": "180-200×60-80×76 (3 cajones)", "precio": "$2.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "escritorio-imperial": {"categoria": "Escritorios", "titulo": "Escritorio Imperial", "subtitulo": "Diseño de autor con detalle escultórico en el frente, madera oscura.", "imagenes": ["img/escritorios/escritorio-imperial.jpg", "img/escritorios/escritorio-imperial-2.jpg", "img/escritorios/escritorio-imperial-3.jpg"], "medidas": [{"etiqueta": "90-110×50-60×76 (1 cajón)", "precio": "$1.790.000"}, {"etiqueta": "120-140×50-60×76 (2 cajones)", "precio": "$2.100.000"}, {"etiqueta": "150-170×60-80×76 (3 cajones)", "precio": "$2.690.000"}, {"etiqueta": "180-200×60-80×76 (3 cajones)", "precio": "$3.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "sofacama-boston-slim": {"categoria": "Sofá Cama", "titulo": "Boston Slim Cama", "subtitulo": "Líneas depuradas y máximo aprovechamiento del espacio para el día a día. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-boston-slim.jpg", "img/sofacamas/sofacama-boston-slim-2.jpg", "img/sofacamas/sofacama-boston-slim-3.jpg"], "medidas": [{"etiqueta": "2 puestos", "precio": "$2.990.000 COP"}, {"etiqueta": "3 puestos", "precio": "$3.490.000 COP"}], "maderas": []}, "sofacama-boston-slim-elite": {"categoria": "Sofá Cama", "titulo": "Boston Slim Cama Élite", "subtitulo": "La versión superior del Boston Slim, con acabados más sofisticados. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-boston-slim-elite.jpg", "img/sofacamas/sofacama-boston-slim-elite-2.jpg", "img/sofacamas/sofacama-boston-slim-elite-3.jpg"], "medidas": [{"etiqueta": "2 puestos", "precio": "$3.090.000 COP"}, {"etiqueta": "3 puestos", "precio": "$3.590.000 COP"}], "maderas": []}, "sofacama-amsterdam-premium": {"categoria": "Sofá Cama", "titulo": "Ámsterdam Premium", "subtitulo": "Espacio, guardado y descanso en un solo mueble, ideal para salas amplias. 3 puestos con baúl. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-amsterdam-premium.jpg", "img/sofacamas/sofacama-amsterdam-premium-2.jpg", "img/sofacamas/sofacama-amsterdam-premium-3.jpg"], "medidas": [{"etiqueta": "Precio único", "precio": "$5.390.000 COP"}], "maderas": []}, "sofacama-amsterdam-beige": {"categoria": "Sofá Cama", "titulo": "Ámsterdam Premium Beige", "subtitulo": "El mismo diseño Ámsterdam en un tono beige cálido y versátil. 3 puestos con baúl. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-amsterdam-beige.jpg", "img/sofacamas/sofacama-amsterdam-beige-2.jpg", "img/sofacamas/sofacama-amsterdam-beige-3.jpg"], "medidas": [{"etiqueta": "Precio único", "precio": "$5.390.000 COP"}], "maderas": []}, "sofacama-oslo-master": {"categoria": "Sofá Cama", "titulo": "Oslo Master", "subtitulo": "Nuestro modelo insignia: máxima comodidad para toda la familia. 3 puestos con baúl. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-oslo-master.jpg", "img/sofacamas/sofacama-oslo-master-2.jpg", "img/sofacamas/sofacama-oslo-master-3.jpg"], "medidas": [{"etiqueta": "Precio único", "precio": "$5.790.000 COP"}], "maderas": []}, "sofacama-monaco-compact": {"categoria": "Sofá Cama", "titulo": "Mónaco Compact", "subtitulo": "Elegancia minimalista, perfecta para espacios modernos. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-monaco-compact.jpg", "img/sofacamas/sofacama-monaco-compact-2.jpg", "img/sofacamas/sofacama-monaco-compact-3.jpg"], "medidas": [{"etiqueta": "2 puestos", "precio": "$3.190.000 COP"}, {"etiqueta": "3 puestos", "precio": "$3.690.000 COP"}], "maderas": []}, "sofacama-verona-premium": {"categoria": "Sofá Cama", "titulo": "Verona Premium", "subtitulo": "Diseño atemporal y acolchado, para una sala siempre acogedora. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-verona-premium.jpg", "img/sofacamas/sofacama-verona-premium-2.jpg", "img/sofacamas/sofacama-verona-premium-3.jpg"], "medidas": [{"etiqueta": "2 puestos", "precio": "$3.290.000 COP"}, {"etiqueta": "3 puestos", "precio": "$3.790.000 COP"}], "maderas": []}, "sofacama-verona-curvo-signature": {"categoria": "Sofá Cama", "titulo": "Verona Curvo Signature", "subtitulo": "Nuestra pieza más exclusiva: líneas curvas y estructura en metal a la vista. Disponible en más de 100 telas premium.", "imagenes": ["img/sofacamas/sofacama-verona-curvo-signature.jpg", "img/sofacamas/sofacama-verona-curvo-signature-2.jpg", "img/sofacamas/sofacama-verona-curvo-signature-3.jpg"], "medidas": [{"etiqueta": "2 puestos", "precio": "$3.890.000 COP"}, {"etiqueta": "3 puestos", "precio": "$4.390.000 COP"}], "maderas": []}, "comedor-firenz": {"categoria": "Comedores", "titulo": "Mesa Firenz Redonda", "subtitulo": "Base tipo tambor acanalado en madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-firenz.jpg", "img/comedores/comedor-firenz-2.jpg", "img/comedores/comedor-firenz-3.jpg"], "medidas": [{"etiqueta": "De 120 cm", "precio": "$3.290.000"}, {"etiqueta": "De 150 cm", "precio": "$3.490.000"}, {"etiqueta": "De 170 cm", "precio": "$3.890.000"}, {"etiqueta": "De 190 cm", "precio": "$4.290.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-royale": {"categoria": "Comedores", "titulo": "Mesa Royale", "subtitulo": "Base metálica tipo hairpin, tapa en madera natural. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-royale.jpg", "img/comedores/comedor-royale-2.jpg", "img/comedores/comedor-royale-3.jpg"], "medidas": [{"etiqueta": "De 120 cm", "precio": "$2.390.000"}, {"etiqueta": "De 150 cm", "precio": "$3.290.000"}, {"etiqueta": "De 170 cm", "precio": "$3.690.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-bellagio": {"categoria": "Comedores", "titulo": "Mesa Bellagio Redonda", "subtitulo": "Base escultórica en madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-bellagio.jpg", "img/comedores/comedor-bellagio-2.jpg", "img/comedores/comedor-bellagio-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.990.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$3.490.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.990.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$5.190.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$5.590.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$7.080.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-prestige": {"categoria": "Comedores", "titulo": "Comedor Prestige", "subtitulo": "Base tipo tambor con listones verticales. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-prestige.jpg", "img/comedores/comedor-prestige-2.jpg", "img/comedores/comedor-prestige-3.jpg"], "medidas": [{"etiqueta": "De 120 cm", "precio": "$2.990.000"}, {"etiqueta": "De 150 cm", "precio": "$3.590.000"}, {"etiqueta": "De 170 cm", "precio": "$4.490.000"}, {"etiqueta": "De 190 cm", "precio": "$5.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-altamira": {"categoria": "Comedores", "titulo": "Comedor Altamira", "subtitulo": "Base geométrica en cruz, madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-altamira.jpg", "img/comedores/comedor-altamira-2.jpg", "img/comedores/comedor-altamira-3.jpg"], "medidas": [{"etiqueta": "De 120 cm", "precio": "$2.890.000"}, {"etiqueta": "De 150 cm", "precio": "$3.490.000"}, {"etiqueta": "De 170 cm", "precio": "$4.190.000"}, {"etiqueta": "De 190 cm", "precio": "$4.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-signature": {"categoria": "Comedores", "titulo": "Comedor Signature", "subtitulo": "Base cónica maciza de una sola pieza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-signature.jpg", "img/comedores/comedor-signature-2.jpg", "img/comedores/comedor-signature-3.jpg"], "medidas": [{"etiqueta": "De 120 cm", "precio": "$2.990.000"}, {"etiqueta": "De 150 cm", "precio": "$3.290.000"}, {"etiqueta": "De 170 cm", "precio": "$3.990.000"}, {"etiqueta": "De 190 cm", "precio": "$5.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-zafiro": {"categoria": "Comedores", "titulo": "Comedor Zafiro", "subtitulo": "Acabado oscuro con base de patas anguladas.", "imagenes": ["img/comedores/comedor-zafiro.jpg", "img/comedores/comedor-zafiro-2.jpg", "img/comedores/comedor-zafiro-3.jpg"], "medidas": [{"etiqueta": "De 120 cm", "precio": "$2.990.000"}, {"etiqueta": "De 150 cm", "precio": "$3.590.000"}, {"etiqueta": "De 170 cm", "precio": "$4.490.000"}, {"etiqueta": "De 190 cm", "precio": "$5.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-luxor": {"categoria": "Sillas", "titulo": "Silla Luxor", "subtitulo": "Silla con brazos en madera maciza, disponible en varios acabados de asiento.", "imagenes": ["img/sillas/silla-luxor.jpg", "img/sillas/silla-luxor-2.jpg", "img/sillas/silla-luxor-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-zenith": {"categoria": "Sillas", "titulo": "Silla Zenith", "subtitulo": "Silla con respaldo en rejilla natural y estructura en madera ennegrecida.", "imagenes": ["img/sillas/silla-zenith.jpg", "img/sillas/silla-zenith-2.jpg", "img/sillas/silla-zenith-3.jpg"], "medidas": [{"etiqueta": "Asiento tapizado", "precio": "$1.580.000"}, {"etiqueta": "Asiento cuero", "precio": "$1.680.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-nebula": {"categoria": "Sillas", "titulo": "Silla Nébula", "subtitulo": "Silla de comedor con respaldo curvo y asiento amplio.", "imagenes": ["img/sillas/silla-nebula.jpg", "img/sillas/silla-nebula-2.jpg", "img/sillas/silla-nebula-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-astorya": {"categoria": "Sillas", "titulo": "Silla Astorya", "subtitulo": "Diseño escultural en madera maciza, líneas afiladas y modernas.", "imagenes": ["img/sillas/silla-astorya.jpg", "img/sillas/silla-astorya-2.jpg", "img/sillas/silla-astorya-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-verona": {"categoria": "Sillas", "titulo": "Silla Verona", "subtitulo": "Silla con brazos, respaldo recto y estructura robusta en madera.", "imagenes": ["img/sillas/silla-verona.jpg", "img/sillas/silla-verona-2.jpg", "img/sillas/silla-verona-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-luxor-sin-brazo": {"categoria": "Sillas", "titulo": "Silla Luxor (sin brazo)", "subtitulo": "Versión sin brazos de la Silla Luxor, ideal para espacios compactos.", "imagenes": ["img/sillas/silla-luxor-sin-brazo.jpg", "img/sillas/silla-luxor-sin-brazo-2.jpg", "img/sillas/silla-luxor-sin-brazo-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-fonsi-1": {"categoria": "Sillas", "titulo": "Silla Fonsi", "subtitulo": "Silla estilo nórdico con asiento tejido en fibra natural.", "imagenes": ["img/sillas/silla-fonsi-1.jpg", "img/sillas/silla-fonsi-1-2.jpg", "img/sillas/silla-fonsi-1-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}, {"etiqueta": "Asiento tejido", "precio": "$1.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-delta": {"categoria": "Sillas", "titulo": "Silla Delta", "subtitulo": "Silla con brazos y respaldo envolvente, líneas curvas y elegantes.", "imagenes": ["img/sillas/silla-delta.jpg", "img/sillas/silla-delta-2.jpg", "img/sillas/silla-delta-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$990.000"}, {"etiqueta": "Asiento tapizado", "precio": "$1.090.000"}, {"etiqueta": "Asiento cuero", "precio": "$1.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-fonsi-2": {"categoria": "Sillas", "titulo": "Silla Fonsi (cow horn)", "subtitulo": "Silla estilo cow-horn con respaldo curvo característico.", "imagenes": ["img/sillas/silla-fonsi-2.jpg", "img/sillas/silla-fonsi-2-2.jpg", "img/sillas/silla-fonsi-2-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}, {"etiqueta": "Asiento tejido", "precio": "$1.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-caelus": {"categoria": "Sillas", "titulo": "Silla Caelus", "subtitulo": "Silla con brazos, respaldo en rejilla y estructura en madera maciza.", "imagenes": ["img/sillas/silla-caelus.jpg", "img/sillas/silla-caelus-2.jpg", "img/sillas/silla-caelus-3.jpg"], "medidas": [{"etiqueta": "Asiento tapizado", "precio": "$1.090.000"}, {"etiqueta": "Asiento cuero", "precio": "$1.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-zephyrus": {"categoria": "Sillas", "titulo": "Silla Zephyrus", "subtitulo": "Silla con brazos, respaldo curvo en rejilla natural.", "imagenes": ["img/sillas/silla-zephyrus.jpg", "img/sillas/silla-zephyrus-2.jpg", "img/sillas/silla-zephyrus-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$1.290.000"}, {"etiqueta": "Asiento tapizado", "precio": "$1.360.000"}, {"etiqueta": "Asiento cuero", "precio": "$1.460.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-obsidiana": {"categoria": "Sillas", "titulo": "Silla Obsidiana", "subtitulo": "Silla totalmente tapizada con base en madera de nogal.", "imagenes": ["img/sillas/silla-obsidiana.jpg", "img/sillas/silla-obsidiana-2.jpg", "img/sillas/silla-obsidiana-3.jpg"], "medidas": [{"etiqueta": "Precio único", "precio": "$990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "silla-aeternum": {"categoria": "Sillas", "titulo": "Silla Aeternum", "subtitulo": "Silla estilo cow-horn con asiento tapizado y estructura en madera maciza.", "imagenes": ["img/sillas/silla-aeternum.jpg", "img/sillas/silla-aeternum-2.jpg", "img/sillas/silla-aeternum-3.jpg"], "medidas": [{"etiqueta": "Asiento madera", "precio": "$860.000"}, {"etiqueta": "Asiento tapizado", "precio": "$890.000"}, {"etiqueta": "Asiento cuero", "precio": "$940.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-nyxara": {"categoria": "Camas", "titulo": "Cama Nyxara", "subtitulo": "Cama flotante con mesas de noche integradas en el espaldar, en madera maciza.", "imagenes": ["img/dormitorios/cama-nyxara.jpg", "img/dormitorios/cama-nyxara-2.jpg", "img/dormitorios/cama-nyxara-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$4.890.000"}, {"etiqueta": "Queen", "precio": "$5.490.000"}, {"etiqueta": "King", "precio": "$6.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-kaelis": {"categoria": "Camas", "titulo": "Cama Kaelis", "subtitulo": "Cama de líneas contemporáneas con espaldar tapizado.", "imagenes": ["img/dormitorios/cama-kaelis.jpg", "img/dormitorios/cama-kaelis-2.jpg", "img/dormitorios/cama-kaelis-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$4.890.000"}, {"etiqueta": "Queen", "precio": "$5.490.000"}, {"etiqueta": "King", "precio": "$6.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-seul": {"categoria": "Camas", "titulo": "Cama Seúl", "subtitulo": "Diseño minimalista en madera maciza con espaldar acolchado.", "imagenes": ["img/dormitorios/cama-seul.jpg", "img/dormitorios/cama-seul-2.jpg", "img/dormitorios/cama-seul-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$4.890.000"}, {"etiqueta": "Queen", "precio": "$5.490.000"}, {"etiqueta": "King", "precio": "$6.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-lysandor": {"categoria": "Camas", "titulo": "Cama Lysandor", "subtitulo": "Cama de estructura sólida en madera, diseño atemporal.", "imagenes": ["img/dormitorios/cama-lysandor.jpg", "img/dormitorios/cama-lysandor-2.jpg", "img/dormitorios/cama-lysandor-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$2.790.000"}, {"etiqueta": "Queen", "precio": "$3.190.000"}, {"etiqueta": "King", "precio": "$3.590.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "base-cama-azurio-tapizada": {"categoria": "Camas", "titulo": "Base Cama Azurio Tapizada", "subtitulo": "Base cama tapizada, cómoda y de fácil mantenimiento.", "imagenes": ["img/dormitorios/base-cama-azurio-tapizada.jpg", "img/dormitorios/base-cama-azurio-tapizada-2.jpg", "img/dormitorios/base-cama-azurio-tapizada-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$2.390.000"}, {"etiqueta": "Queen", "precio": "$2.690.000"}, {"etiqueta": "King", "precio": "$3.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "base-cama-azurio": {"categoria": "Camas", "titulo": "Base Cama Azurio", "subtitulo": "Base cama en madera, funcional y de acabado limpio.", "imagenes": ["img/dormitorios/base-cama-azurio.jpg", "img/dormitorios/base-cama-azurio-2.jpg", "img/dormitorios/base-cama-azurio-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$2.190.000"}, {"etiqueta": "Queen", "precio": "$2.490.000"}, {"etiqueta": "King", "precio": "$2.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-noctis": {"categoria": "Camas", "titulo": "Cama Noctis", "subtitulo": "Diseño robusto y oscuro, presencia imponente para la habitación principal.", "imagenes": ["img/dormitorios/cama-noctis.jpg", "img/dormitorios/cama-noctis-2.jpg", "img/dormitorios/cama-noctis-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$4.890.000"}, {"etiqueta": "King", "precio": "$6.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-orpheon": {"categoria": "Camas", "titulo": "Cama Orpheon", "subtitulo": "Cama en madera maciza con espaldar alto y líneas rectas.", "imagenes": ["img/dormitorios/cama-orpheon.jpg", "img/dormitorios/cama-orpheon-2.jpg", "img/dormitorios/cama-orpheon-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$2.890.000"}, {"etiqueta": "Queen", "precio": "$3.290.000"}, {"etiqueta": "King", "precio": "$3.690.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "base-cama-vespera": {"categoria": "Camas", "titulo": "Base Cama Vespera", "subtitulo": "Base cama de estructura sencilla y elegante.", "imagenes": ["img/dormitorios/base-cama-vespera.jpg", "img/dormitorios/base-cama-vespera-2.jpg", "img/dormitorios/base-cama-vespera-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$2.290.000"}, {"etiqueta": "Queen", "precio": "$2.790.000"}, {"etiqueta": "King", "precio": "$3.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-soltice": {"categoria": "Camas", "titulo": "Cama Soltice", "subtitulo": "Cama de diseño premium con espaldar amplio.", "imagenes": ["img/dormitorios/cama-soltice.jpg", "img/dormitorios/cama-soltice-2.jpg", "img/dormitorios/cama-soltice-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$4.890.000"}, {"etiqueta": "Queen", "precio": "$5.490.000"}, {"etiqueta": "King", "precio": "$6.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "cama-draven": {"categoria": "Camas", "titulo": "Cama Draven", "subtitulo": "Cama con espaldar tapizado y estructura en madera maciza.", "imagenes": ["img/dormitorios/cama-draven.jpg", "img/dormitorios/cama-draven-2.jpg", "img/dormitorios/cama-draven-3.jpg"], "medidas": [{"etiqueta": "Doble", "precio": "$2.790.000"}, {"etiqueta": "Queen", "precio": "$3.290.000"}, {"etiqueta": "King", "precio": "$3.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-arkena": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Arkena", "subtitulo": "Medidas: 60×40×50 cm alto.", "imagenes": ["img/dormitorios/mesa-noche-arkena.jpg", "img/dormitorios/mesa-noche-arkena-2.jpg", "img/dormitorios/mesa-noche-arkena-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-top-1": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Top", "subtitulo": "Medidas: 50×40×50 cm alto. Base en madera maciza tipo panel.", "imagenes": ["img/dormitorios/mesa-noche-top-1.jpg", "img/dormitorios/mesa-noche-top-1-2.jpg", "img/dormitorios/mesa-noche-top-1-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-thalor": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Thalor", "subtitulo": "Medidas: 50×40×50 cm alto.", "imagenes": ["img/dormitorios/mesa-noche-thalor.jpg", "img/dormitorios/mesa-noche-thalor-2.jpg", "img/dormitorios/mesa-noche-thalor-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.220.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-velior": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Velior", "subtitulo": "Medidas: 50×40×50 cm alto.", "imagenes": ["img/dormitorios/mesa-noche-velior.jpg", "img/dormitorios/mesa-noche-velior-2.jpg", "img/dormitorios/mesa-noche-velior-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.130.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-mirave": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Mirave", "subtitulo": "Medidas: 50×40×50 cm alto.", "imagenes": ["img/dormitorios/mesa-noche-mirave.jpg", "img/dormitorios/mesa-noche-mirave-2.jpg", "img/dormitorios/mesa-noche-mirave-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-evander": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Evander", "subtitulo": "Medidas: 50×40×50 cm alto.", "imagenes": ["img/dormitorios/mesa-noche-evander.jpg", "img/dormitorios/mesa-noche-evander-2.jpg", "img/dormitorios/mesa-noche-evander-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.250.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-color": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Color", "subtitulo": "Medidas: 50×40×50 cm alto. Disponible en acabado de color.", "imagenes": ["img/dormitorios/mesa-noche-color.jpg", "img/dormitorios/mesa-noche-color-2.jpg", "img/dormitorios/mesa-noche-color-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-ratan": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Ratán", "subtitulo": "Medidas: 50×40×50 cm alto. Frentes en fibra natural tejida.", "imagenes": ["img/dormitorios/mesa-noche-ratan.jpg", "img/dormitorios/mesa-noche-ratan-2.jpg", "img/dormitorios/mesa-noche-ratan-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.390.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "mesa-noche-top-2": {"categoria": "Mesas de Noche", "titulo": "Mesa de Noche Top (cubo)", "subtitulo": "Medidas: 50×40×50 cm alto. Base tipo cubo con repisa abierta.", "imagenes": ["img/dormitorios/mesa-noche-top-2.jpg", "img/dormitorios/mesa-noche-top-2-2.jpg", "img/dormitorios/mesa-noche-top-2-3.jpg"], "medidas": [{"etiqueta": "Valor", "precio": "$1.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-astreon": {"categoria": "Comedores", "titulo": "Mesa Astreon", "subtitulo": "Base en madera maciza tipo pata angulada, líneas depuradas y atemporales. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-astreon.jpg", "img/comedores/comedor-astreon-2.jpg", "img/comedores/comedor-astreon-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.290.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$3.360.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.990.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$4.990.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$5.490.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$6.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-kaizen": {"categoria": "Comedores", "titulo": "Mesa Kaizen", "subtitulo": "Tapa de esquinas redondeadas con patas anguladas en madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-kaizen.jpg", "img/comedores/comedor-kaizen-2.jpg", "img/comedores/comedor-kaizen-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.990.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$3.490.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.990.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$5.190.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$5.590.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$7.080.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-ravello": {"categoria": "Comedores", "titulo": "Mesa Ravello", "subtitulo": "Tapa de esquinas redondeadas sobre doble base cilíndrica acanalada. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-ravello.jpg", "img/comedores/comedor-ravello-2.jpg", "img/comedores/comedor-ravello-3.jpg"], "medidas": [{"etiqueta": "4 puestos (155×90)", "precio": "$4.890.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$5.390.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$5.890.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$6.190.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$7.590.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-altho": {"categoria": "Comedores", "titulo": "Comedor Altho", "subtitulo": "Tapa tipo píldora sobre base escultórica ondulada en madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-altho.jpg", "img/comedores/comedor-altho-2.jpg", "img/comedores/comedor-altho-3.jpg"], "medidas": [{"etiqueta": "4 puestos (165×100)", "precio": "$4.590.000"}, {"etiqueta": "6 puestos (180×110)", "precio": "$5.290.000"}, {"etiqueta": "8 puestos (240×120)", "precio": "$6.190.000"}, {"etiqueta": "10 puestos (290×130)", "precio": "$6.990.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-norvian": {"categoria": "Comedores", "titulo": "Comedor Norvian", "subtitulo": "Patas rectas y robustas en madera maciza, diseño clásico versátil. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-norvian.jpg", "img/comedores/comedor-norvian-2.jpg", "img/comedores/comedor-norvian-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.590.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$2.990.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.590.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$4.490.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$4.990.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$5.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-arkanis-oval": {"categoria": "Comedores", "titulo": "Mesa Arkanis Oval", "subtitulo": "Tapa ovalada sobre base acanalada en madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-arkanis-oval.jpg", "img/comedores/comedor-arkanis-oval-2.jpg", "img/comedores/comedor-arkanis-oval-3.jpg"], "medidas": [{"etiqueta": "4 puestos (155×90)", "precio": "$3.990.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$4.290.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$4.790.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$4.990.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$6.290.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-volterra": {"categoria": "Comedores", "titulo": "Mesa Volterra", "subtitulo": "Patas cilíndricas rectas, líneas simples y atemporales. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-volterra.jpg", "img/comedores/comedor-volterra-2.jpg", "img/comedores/comedor-volterra-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.990.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$3.490.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.990.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$5.190.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$5.590.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$7.090.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-celestiam": {"categoria": "Comedores", "titulo": "Mesa Celestiam", "subtitulo": "Estructura recta y robusta en madera maciza, diseño versátil. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-celestiam.jpg", "img/comedores/comedor-celestiam-2.jpg", "img/comedores/comedor-celestiam-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.590.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$2.990.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.590.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$4.490.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$4.990.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$5.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-elisor": {"categoria": "Comedores", "titulo": "Mesa Elisor", "subtitulo": "Esquinas redondeadas con unión curva entre tapa y pata, madera maciza. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-elisor.jpg", "img/comedores/comedor-elisor-2.jpg", "img/comedores/comedor-elisor-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.990.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$3.490.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.990.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$5.190.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$5.590.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$7.080.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-syl": {"categoria": "Comedores", "titulo": "Mesa Syl", "subtitulo": "Bordes suavizados y patas en ángulo, acabado claro. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-syl.jpg", "img/comedores/comedor-syl-2.jpg", "img/comedores/comedor-syl-3.jpg"], "medidas": [{"etiqueta": "4 puestos (120×90)", "precio": "$2.590.000"}, {"etiqueta": "4 puestos (155×90)", "precio": "$2.990.000"}, {"etiqueta": "6 puestos (170×100)", "precio": "$3.590.000"}, {"etiqueta": "8 puestos (230×110)", "precio": "$4.390.000"}, {"etiqueta": "10 puestos (280×120)", "precio": "$4.890.000"}, {"etiqueta": "12 puestos (320×130)", "precio": "$5.890.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-orunox": {"categoria": "Comedores", "titulo": "Comedor Orunox", "subtitulo": "Tapa orgánica tipo isla sobre patas cilíndricas en tono oscuro. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-orunox.jpg", "img/comedores/comedor-orunox-2.jpg", "img/comedores/comedor-orunox-3.jpg"], "medidas": [{"etiqueta": "4 puestos (180×100)", "precio": "$4.990.000"}, {"etiqueta": "6 puestos (220×120)", "precio": "$6.290.000"}, {"etiqueta": "8 puestos (260×140)", "precio": "$6.990.000"}, {"etiqueta": "10 puestos (300×140)", "precio": "$8.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}, "comedor-sosmo-2": {"categoria": "Comedores", "titulo": "Comedor Sosmo.2", "subtitulo": "Tapa orgánica tipo isla sobre base de panel y cilindro, acabado claro. *Valores sin sillas.", "imagenes": ["img/comedores/comedor-sosmo-2.jpg", "img/comedores/comedor-sosmo-2-2.jpg", "img/comedores/comedor-sosmo-2-3.jpg"], "medidas": [{"etiqueta": "4 puestos (180×100)", "precio": "$4.990.000"}, {"etiqueta": "6 puestos (220×120)", "precio": "$6.290.000"}, {"etiqueta": "8 puestos (260×140)", "precio": "$6.990.000"}, {"etiqueta": "10 puestos (300×140)", "precio": "$8.190.000"}], "maderas": ["Flor morado", "Nogal cafetero", "Roble black"]}};
+</script>
+
+<script src="script.js"></script>
+<script>
+  function toggleNav() {
+    var nav = document.querySelector('.nav');
+    if (!nav) return;
+    var open = nav.style.display === 'flex';
+    nav.style.display       = open ? '' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.position      = open ? '' : 'absolute';
+    nav.style.top           = open ? '' : '66px';
+    nav.style.left          = open ? '' : '0';
+    nav.style.right         = open ? '' : '0';
+    nav.style.background    = open ? '' : '#FAFAF7';
+    nav.style.padding       = open ? '' : '16px 24px';
+    nav.style.borderBottom  = open ? '' : '1px solid #DDD6C9';
+    nav.style.boxShadow     = open ? '' : '0 8px 24px rgba(0,0,0,.07)';
+    nav.style.zIndex        = open ? '' : '99';
+  }
+
+  /* Filtro de categorías del catálogo */
+  (function(){
+    var botones = document.querySelectorAll('#filtros .filtro-btn');
+    var tarjetas = document.querySelectorAll('#grid-productos .cat-card');
+    botones.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        botones.forEach(function(b){ b.classList.remove('activo'); });
+        btn.classList.add('activo');
+        var cat = btn.getAttribute('data-cat');
+        tarjetas.forEach(function(card){
+          var mostrar = (cat === 'todos' || card.getAttribute('data-cat') === cat);
+          card.style.display = mostrar ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

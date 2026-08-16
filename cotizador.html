@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cotizador Inteligente | Carpincon — Bogotá</title>
+  <meta name="description" content="Diseña tu sofá o solicita el retapizado paso a paso: elige forma, tela, color y accesorios, mira una vista previa en vivo y recibe el precio aproximado al instante.">
+  <link rel="icon" href="img/new_log.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cotizador.css">
+</head>
+<body>
+
+<!-- ─ HEADER ──────────────────────────────────────────────── -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="/" class="logo">
+      <img src="img/new_log.jpeg" alt="Logo Carpincon">
+      <div>
+        <div class="logo-name">Carpincon</div>
+        <div class="logo-tag">Carpintería &amp; Tapicería</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="quienessomos.html">Quiénes somos</a>
+      <a href="productos_y_servicios.html">Productos</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="cotizador.html" class="activo">Cotizador</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="hdr-cta">
+      <div class="hdr-icons">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="hdr-icon" aria-label="Instagram">📸</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="hdr-icon" aria-label="TikTok">🎵</a>
+      </div>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-hdr">💬 WhatsApp</a>
+      <button class="hmb" aria-label="Abrir menú" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ─ PAGE HERO ───────────────────────────────────────────── -->
+<section class="page-hero" style="min-height:38vh">
+  <div class="hero-bg" style="background-image:url('img/cotizador.png')"></div>
+  <div class="hero-ov"></div>
+  <div class="page-hero-body">
+    <div class="hero-tag">✦ Cotizador inteligente</div>
+    <h1>Diseña tu sofá y mira el precio al instante</h1>
+    <p>Elige el servicio, la forma, la tela y los detalles. La vista previa y el precio se actualizan mientras decides.</p>
+  </div>
+</section>
+
+<div id="cotizador-top"></div>
+
+<!-- ─ COTIZADOR ───────────────────────────────────────────── -->
+<section class="cz-wrap">
+
+  <!-- ── VISTA PREVIA (columna izquierda) ── -->
+  <aside class="cz-preview">
+    <div class="cz-preview-svg-wrap">
+      <div class="cz-photo-stage" id="cz-photo-stage">
+        <img id="cz-sofa-foto" class="cz-sofa-foto" src="img/sofas/madera_conica-recto-3.png" alt="Vista previa del sofá">
+        <div class="cz-sofa-textura" id="cz-sofa-textura"></div>
+        <div class="cz-sofa-tinte" id="cz-sofa-tinte"></div>
+      </div>
+    </div>
+
+    <div class="cz-tela-swatch">
+      <div id="cz-tela-chip" class="cz-tela-chip tela-antifluidos"></div>
+      <div class="cz-tela-info">
+        <strong>Tela seleccionada</strong>
+        <span id="cz-tela-nombre">Antifluidos amigable con mascotas</span>
+      </div>
+    </div>
+
+    <div class="cz-price-live">
+      <div class="lbl">Precio aproximado</div>
+      <div class="val" id="cz-price-val">— elige un servicio —</div>
+      <div class="note">Vista previa referencial a partir de fotos reales — el color y la tela son aproximados. El valor final se confirma con un asesor.</div>
+    </div>
+  </aside>
+
+  <!-- ── WIZARD (columna derecha) ── -->
+  <div class="cz-wizard">
+
+    <div class="cz-steps-nav">
+      <button class="cz-step-pill" id="pill-servicio"><span class="n">1</span>Servicio</button>
+      <button class="cz-step-pill" id="pill-forma"><span class="n">2</span>Forma y puestos</button>
+      <button class="cz-step-pill" id="pill-tela"><span class="n">3</span>Tela y color</button>
+      <button class="cz-step-pill" id="pill-detalles"><span class="n">4</span>Detalles</button>
+      <button class="cz-step-pill" id="pill-resumen"><span class="n">5</span>Resumen</button>
+    </div>
+
+    <!-- PASO 1: SERVICIO -->
+    <div class="cz-step" id="step-servicio">
+      <h2>¿Qué necesitas?</h2>
+      <p class="cz-step-sub">Elige el servicio y las opciones se ajustan automáticamente en los siguientes pasos.</p>
+      <div class="cz-option-grid" id="cz-servicio-grid"></div>
+    </div>
+
+    <!-- PASO 2: FORMA Y PUESTOS -->
+    <div class="cz-step" id="step-forma">
+      <h2>Forma y tamaño</h2>
+      <p class="cz-step-sub">La vista previa cambia según la forma y el número de puestos que elijas. En la L y la U, la chaise y los laterales ya están contados dentro del total de puestos.</p>
+      <div class="cz-option-grid" id="cz-forma-grid"></div>
+      <div class="cz-counter">
+        <button type="button" id="cz-puestos-menos" aria-label="Menos puestos">−</button>
+        <div class="num" id="cz-puestos-num">3</div>
+        <button type="button" id="cz-puestos-mas" aria-label="Más puestos">+</button>
+        <span class="lbl">puestos</span>
+      </div>
+      <p class="cz-puestos-note" id="cz-puestos-min-note"></p>
+    </div>
+
+    <!-- PASO 3: TELA Y COLOR -->
+    <div class="cz-step" id="step-tela">
+      <h2>Tela y color</h2>
+      <p class="cz-step-sub">La muestra de tela y el color del sofá se actualizan al elegir.</p>
+      <div class="cz-option-grid" id="cz-tela-grid"></div>
+      <div class="cz-color-grid" id="cz-color-grid"></div>
+    </div>
+
+    <!-- PASO 4: DETALLES -->
+    <div class="cz-step" id="step-detalles">
+      <h2>Detalles y adiciones</h2>
+      <p class="cz-step-sub">El precio se recalcula al instante con lo que actives.</p>
+
+      <!-- Solo Retapizado Premium: siempre incluido, no es opcional -->
+      <div id="bloque-incluye-siempre" class="cz-info-box" style="display:none">
+        <h4>El Retapizado Premium siempre incluye</h4>
+        <ul>
+          <li>Cambio de espuma</li>
+          <li>Cambio de cinchas y resortes</li>
+        </ul>
+        <p style="margin-top:10px; font-size:14px; color:var(--ink-soft)">La estructura de tu mueble se conserva tal cual — no se cambia.</p>
+      </div>
+
+      <!-- Solo Sala Nueva Premium -->
+      <div id="bloque-sala-nueva" style="display:none">
+        <div class="cz-field-row">
+          <div class="fg">
+            <label for="cz-madera">Tipo de madera de estructura</label>
+            <select id="cz-madera"></select>
+          </div>
+          <div class="fg">
+            <label for="cz-pata">Patas</label>
+            <select id="cz-pata"></select>
+          </div>
+        </div>
+        <div class="cz-toggle-row">
+          <div class="cz-toggle-tx"><strong>Puff adicional a juego</strong><span>Puf a juego para apoyar los pies.</span></div>
+          <label class="cz-switch"><input type="checkbox" id="toggle-puff"><span class="track"></span></label>
+        </div>
+      </div>
+
+      <!-- Común a todos los servicios -->
+      <div class="cz-toggle-row" style="margin-top:10px">
+        <div class="cz-toggle-tx"><strong>Cojines decorativos</strong><span>Cojines sueltos a juego con la tela.</span></div>
+        <div class="cz-counter" style="margin:0">
+          <button type="button" id="cz-cojines-menos" aria-label="Menos cojines">−</button>
+          <div class="num" id="cz-cojines-num">0</div>
+          <button type="button" id="cz-cojines-mas" aria-label="Más cojines">+</button>
+        </div>
+      </div>
+
+      <div class="cz-toggle-row">
+        <div class="cz-toggle-tx"><strong>Transporte</strong><span>Puedes desactivarlo y volver a activarlo cuando quieras.</span></div>
+        <label class="cz-switch"><input type="checkbox" id="toggle-transporte" checked><span class="track"></span></label>
+      </div>
+      <div class="cz-toggle-row" style="flex-direction:column; align-items:stretch; gap:14px; border-bottom:none">
+        <div class="cz-transporte-info" id="cz-transporte-desglose"></div>
+        <div class="fg">
+          <label for="cz-ubicacion">Ciudad / barrio de entrega (opcional)</label>
+          <input type="text" id="cz-ubicacion" placeholder="Ej. Chapinero, Bogotá">
+        </div>
+      </div>
+    </div>
+
+    <!-- PASO 5: RESUMEN -->
+    <div class="cz-step" id="step-resumen">
+      <h2>Resumen de tu cotización</h2>
+      <p class="cz-step-sub">Este es un precio aproximado. Un asesor lo confirma contigo por WhatsApp.</p>
+
+      <div class="cz-summary-card">
+        <div class="cz-badges" id="cz-resumen-badges" style="margin-top:0; margin-bottom:20px"></div>
+        <div id="cz-resumen-detalle"></div>
+        <div class="cz-badges">
+          <span class="cz-badge" id="cz-garantia">Garantía</span>
+          <span class="cz-badge" id="cz-tiempo">Tiempo de entrega</span>
+        </div>
+      </div>
+
+      <div class="factions">
+        <a id="cz-wa-btn" href="#" target="_blank" rel="noopener" class="btn btn-dark" style="width:100%">💬 Enviar cotización por WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="cz-nav-btns">
+      <button type="button" class="btn-outline" id="cz-btn-prev">← Atrás</button>
+      <button type="button" class="btn btn-gold" id="cz-btn-next">Siguiente →</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Barra de precio fija en móvil -->
+<div class="cz-mobile-bar">
+  <span>Total aproximado</span>
+  <span class="val" id="cz-price-val-mobile">—</span>
+</div>
+
+<!-- ─ FOOTER ──────────────────────────────────────────────── -->
+<footer class="ft">
+  <div class="ft-grid">
+    <div>
+      <div class="ft-brand"><img src="img/new_log.jpeg" alt="Logo Carpincon"><span>Inversiones Carpincon</span></div>
+      <p class="ft-desc">Carpintería y tapicería premium en Bogotá. Fabricamos muebles a medida con materiales de primera calidad.</p>
+      <div class="ft-redes">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="ft-red">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="ft-red">🎵 TikTok</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-h">Navegación</div>
+      <ul class="ft-links">
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos_y_servicios.html">Productos</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="cotizador.html">Cotizador inteligente</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-h">Contacto</div>
+      <div class="ft-ci">💬 <a href="https://wa.me/573246884807" style="color:inherit">+57 324 688 4807</a></div>
+      <div class="ft-ci">📍 <span>Bogotá, Colombia</span></div>
+      <div class="ft-ci">🕐 <span>Lun – Sáb: 8am – 6pm</span></div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2025 Inversiones Carpincon. Todos los derechos reservados.</span>
+    <span>Hecho con 🪵 en Bogotá</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <span class="ic">💬</span><span class="txt">Cotizar por WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+<script>
+  function toggleNav() {
+    var nav = document.querySelector('.nav');
+    if (!nav) return;
+    var open = nav.style.display === 'flex';
+    nav.style.display       = open ? '' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.position      = open ? '' : 'absolute';
+    nav.style.top           = open ? '' : '66px';
+    nav.style.left          = open ? '' : '0';
+    nav.style.right         = open ? '' : '0';
+    nav.style.background    = open ? '' : '#FAFAF7';
+    nav.style.padding       = open ? '' : '16px 24px';
+    nav.style.borderBottom  = open ? '' : '1px solid #DDD6C9';
+    nav.style.boxShadow     = open ? '' : '0 8px 24px rgba(0,0,0,.07)';
+    nav.style.zIndex        = open ? '' : '99';
+  }
+</script>
+<script src="cotizador.js"></script>
+
+</body>
+</html>

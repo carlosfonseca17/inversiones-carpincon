@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto | Carpincon — Bogotá</title>
+  <meta name="description" content="Escríbenos por WhatsApp o el formulario para cotizar tu mueble a medida en Bogotá. Respuesta en menos de 24 horas.">
+  <link rel="icon" href="img/new_log.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ─ HEADER ──────────────────────────────────────────────── -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a href="/" class="logo">
+      <img src="img/new_log.jpeg" alt="Logo Carpincon">
+      <div>
+        <div class="logo-name">Carpincon</div>
+        <div class="logo-tag">Carpintería &amp; Tapicería</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="quienessomos.html">Quiénes somos</a>
+      <a href="productos_y_servicios.html">Productos</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+    <div class="hdr-cta">
+      <div class="hdr-icons">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="hdr-icon" aria-label="Instagram">📸</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="hdr-icon" aria-label="TikTok">🎵</a>
+      </div>
+      <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-hdr">💬 WhatsApp</a>
+      <button class="hmb" aria-label="Abrir menú" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ─ PAGE HERO ───────────────────────────────────────────── -->
+<section class="page-hero" style="min-height:36vh">
+  <div class="hero-bg" style="background-image:url('img/contacto.png')"></div>
+  <div class="hero-ov"></div>
+  <div class="page-hero-body">
+    <div class="hero-tag">✦ Hablemos</div>
+    <h1>Contacto</h1>
+    <p>Cuéntanos tu idea y te ayudamos a hacerla realidad. Respondemos en menos de 24 horas.</p>
+  </div>
+</section>
+
+<!-- ─ CONTACTO: INFO + FORMULARIO ─────────────────────────── -->
+<section class="cot" style="padding-top:70px">
+  <div class="cot-in" style="max-width: var(--container)">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <span class="label">Información de contacto</span>
+        <h2 class="title" style="margin-bottom:24px">Escríbenos por el canal que prefieras</h2>
+
+        <div class="info-card">
+          <div class="feat-ic">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener">+57 324 688 4807</a></p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="feat-ic">📍</div>
+          <div>
+            <h4>Ubicación</h4>
+            <p>Bogotá, Colombia</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="feat-ic">🕐</div>
+          <div>
+            <h4>Horario de atención</h4>
+            <p>Lunes a sábado: 8:00 am – 6:00 pm</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="feat-ic">📸</div>
+          <div>
+            <h4>Redes sociales</h4>
+            <p>
+              <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener">Instagram</a>
+              &nbsp;·&nbsp;
+              <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener">TikTok</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cot-card">
+        <form id="formulario">
+          <input type="hidden" id="origen" value="contacto">
+          <div class="frow">
+            <div class="fg"><label for="nombre">Tu nombre</label><input type="text" id="nombre" placeholder="Ej. María García" required></div>
+            <div class="fg"><label for="telefono">Celular</label><input type="tel" id="telefono" placeholder="3XX XXX XXXX" required></div>
+            <div class="fg full"><label for="correo">Correo electrónico</label><input type="email" id="correo" placeholder="tuemail@correo.com" required></div>
+            <div class="fg full">
+              <label for="tipo">¿Qué necesitas?</label>
+              <select id="tipo">
+                <option value="">— Selecciona —</option>
+                <option>Comedor a medida</option>
+                <option>Sala / sofás</option>
+                <option>Cocina integral</option>
+                <option>Closet / armario</option>
+                <option>Escalera en madera</option>
+                <option>Tapicería / retapizado</option>
+                <option>Restauración de mueble</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="fg full"><label for="mensaje">Cuéntanos más detalles</label><textarea id="mensaje" placeholder="Ej. Necesito un comedor para 6 personas en madera oscura…" required></textarea></div>
+          </div>
+          <div class="factions">
+            <button type="submit" class="btn btn-dark">Enviar solicitud</button>
+            <div class="divider">o si prefieres</div>
+            <a href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" class="btn-wa-form">💬 Escribirnos por WhatsApp directamente</a>
+          </div>
+          <p id="mensaje-error" class="fmsg err" style="display:none;">❌ Hubo un error al enviar. Inténtalo nuevamente.</p>
+          <p id="mensaje-exito" class="fmsg ok" style="display:none;">✅ ¡Solicitud enviada! Te contactamos en menos de 24 horas.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─ FOOTER ──────────────────────────────────────────────── -->
+<footer class="ft">
+  <div class="ft-grid">
+    <div>
+      <div class="ft-brand"><img src="img/new_log.jpeg" alt="Logo Carpincon"><span>Inversiones Carpincon</span></div>
+      <p class="ft-desc">Carpintería y tapicería premium en Bogotá. Fabricamos muebles a medida con materiales de primera calidad.</p>
+      <div class="ft-redes">
+        <a href="https://instagram.com/inversiones_carpincon" target="_blank" rel="noopener" class="ft-red">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@inversiones.carpi2?_r=1&_t=ZS-96DtychHNup" target="_blank" rel="noopener" class="ft-red">🎵 TikTok</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-h">Navegación</div>
+      <ul class="ft-links">
+        <li><a href="quienessomos.html">Quiénes somos</a></li>
+        <li><a href="productos_y_servicios.html">Productos</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html#cotizacion">Cotizar gratis</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-h">Contacto</div>
+      <div class="ft-ci">💬 <a href="https://wa.me/573246884807" style="color:inherit">+57 324 688 4807</a></div>
+      <div class="ft-ci">📍 <span>Bogotá, Colombia</span></div>
+      <div class="ft-ci">🕐 <span>Lun – Sáb: 8am – 6pm</span></div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2025 Inversiones Carpincon. Todos los derechos reservados.</span>
+    <span>Hecho con 🪵 en Bogotá</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573246884807?text=Hola%2C%20quiero%20solicitar%20una%20cotización" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <span class="ic">💬</span><span class="txt">Cotizar por WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+<script>
+  function toggleNav() {
+    var nav = document.querySelector('.nav');
+    if (!nav) return;
+    var open = nav.style.display === 'flex';
+    nav.style.display       = open ? '' : 'flex';
+    nav.style.flexDirection = 'column';
+    nav.style.position      = open ? '' : 'absolute';
+    nav.style.top           = open ? '' : '66px';
+    nav.style.left          = open ? '' : '0';
+    nav.style.right         = open ? '' : '0';
+    nav.style.background    = open ? '' : '#FAFAF7';
+    nav.style.padding       = open ? '' : '16px 24px';
+    nav.style.borderBottom  = open ? '' : '1px solid #DDD6C9';
+    nav.style.boxShadow     = open ? '' : '0 8px 24px rgba(0,0,0,.07)';
+    nav.style.zIndex        = open ? '' : '99';
+  }
+</script>
+
+</body>
+</html>
